@@ -1,43 +1,52 @@
-    RP3250 Development board
-This is my hobby project featuring RP2350 MCU.
 
-     Key features of RP2350:
+<h1>RP2350 Development Board</h1>
+This development board is built around the powerful RP2350A microcontroller.This would serve as an reference for your project.
 
-Dual Cortex-M33 or Hazard3 processors at up to 150MHz
+<h1>Key Features of the RP2350:</h1> 
 
-520KB multi-bank high performance SRAM
+Dual Arm Cortex-M33 or dual Hazard3 RISC-V processors @ 150MHz
 
-Support for up to 16MB of off-chip Flash memory via dedicated QSPI bus
+520 KB on-chip SRAM
 
-DMA controller
+Robust and fully documented security features:
 
-Fully-connected AHB crossbar
+ARM TrustZone for Cortex-M
+Optional boot signing, enforced by on-chip mask ROM, with key fingerprint in OTP
+Protected OTP storage for optional boot decryption key
+Global bus filtering based on Arm or RISC-V security/privilege levels
+Peripherals, GPIOs, and DMA channels individually assignable to security domains
+Hardware mitigations for fault injection attacks
+Hardware SHA-256 accelerator
+2 × UART
 
-On-chip programmable LDO to generate core voltage
+2 × SPI controllers
 
-2 on-chip PLLs to generate USB and core clocks
+2 × I2C controllers
 
-30 GPIO pins, 4 of which can be used as analogue inputs
+24 × PWM channels
 
-Peripherals
+4/8 x ADC channels
 
-2 UARTs
+1 × USB 1.1 controller and PHY, with host and device support
 
-2 SPI controllers
+12 × PIO state machines
 
-2 I2C controllers
+Software-compatible with RP2040
 
-24 PWM channels
+Open source C/C++ SDK, MicroPython support
 
-USB 1.1 controller and PHY, with host and device support
+Various packaging options: 
 
-3 Programmable IO (PIO) blocks, 12 state machines total
+RP2350A: 30 GPIO, 7x7 QFN60  (Used in this project)
+RP2350B: 48 GPIO, 10x10 QFN80
+RP2354A: 30 GPIO, 7x7 QFN60, 2MB stacked flash 
+RP2354B: 48 GPIO, 10x10 QFN80, 2MB stacked flash
 
-     Additional Resources
+<h1>Additional Resources:</h1>
 
-Raspberry Pi Org: https://www.raspberrypi.org/
+Raspberry Pi Official Website: https://www.raspberrypi.com/
 
-RP2350 Datashet: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf   
+RP2350 Datasheet: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf
 
-EasyEDA: https://easyeda.com/
+Design and Simulation Tools (EasyEDA): https://easyeda.com/
 
